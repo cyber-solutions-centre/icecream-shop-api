@@ -52,7 +52,7 @@ namespace api.Controllers
 
         [HttpDelete("{id}"), ActionName("delete-flavour")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public ActionResult<FlavourDTO> DeleteFlavour(int id)
+        public ActionResult<FlavourDTO> * DeleteFlavour(int id)
         {
             domain.DeleteFlavour(id);
             return StatusCode(204);
